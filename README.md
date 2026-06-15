@@ -1,1 +1,1 @@
-# smart-filter-privacy
+# Smart Filter Privacy Policy
