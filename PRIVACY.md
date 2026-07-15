@@ -1,26 +1,9 @@
-# Privacy Policy
+# Privacy Policy — Smart Filter
 
-**Last updated: June 15, 2026**
+**Last updated: July 15, 2026**
 
-Smart Filter ("the app", "we", "us") is a photo editor that runs entirely on
-your device. This policy explains what the app does and does not do with your
-information. In short: **Smart Filter does not collect, transmit, store, sell,
-or share any of your personal data or photos.**
-
-## Summary
-
-- 🔒 **No data collection.** We do not collect any personal information.
-- 📵 **No tracking.** No analytics, no advertising, no tracking SDKs, no
-  third-party data sharing.
-- 📲 **Everything stays on your device.** Your photos and the text you type are
-  processed locally and are never uploaded to us or to any server.
-- 🙅 **No account.** There is no sign-up, login, or profile.
-
-## Information We Collect
-
-**None.** Smart Filter does not collect, log, or transmit any personal data,
-usage data, device identifiers, or photos. The app makes no network requests to
-us and has no backend servers.
+Smart Filter is built to be private by design: it collects no personal data, contains
+no analytics, and processes your photos and text entirely on your device.
 
 ## Photos and Photo Library Access
 
@@ -35,21 +18,43 @@ us and has no backend servers.
 Your photos are never uploaded, copied off your device, or seen by us or anyone
 else.
 
+## Face Detection
+
+To improve edits, Smart Filter uses Apple's Vision framework **on your device** to
+detect whether a photo contains faces and to outline the photo's main subject:
+
+- **What is processed.** The app runs Apple's on-device face detection only to
+  count how many faces appear in the photo you are editing (for example, to treat
+  portraits more gently and to enable background blur only on portraits). It also
+  builds a temporary subject outline (mask) used for the background-blur effect.
+- **What is NOT collected.** The app performs no facial recognition and no
+  identification. It does not create faceprints, biometric templates, or any data
+  that could identify a person. It does not store face locations or landmarks —
+  only a momentary count of faces is used.
+- **Storage and retention.** Face detection results exist only in the app's
+  memory while you edit the current photo and are discarded as soon as you pick
+  another photo or close the app. Nothing is written to disk.
+- **Sharing.** Face detection results never leave your device and are not shared
+  with us, Apple, or any third party.
+
 ## On-Device Processing
 
-Smart Filter turns your text descriptions into edits using Apple's on-device
-foundation model and Apple frameworks (Core Image, Vision). The text you type
-and the photos you edit are processed entirely on your device. Smart Filter does
-not send your prompts or photos off the device.
+Smart Filter turns your text descriptions into edits using an AI model that is
+bundled inside the app and runs entirely on your device, together with Apple
+frameworks (Core Image, Vision). The text you type and the photos you edit are
+processed locally; nothing is sent to any server. Smart Filter does not send your
+prompts, your photos, or any data derived from them off the device — the app
+contains no networking code for user content at all.
 
-## Subscriptions and Purchases
+## Purchases
 
-Optional subscriptions are sold and processed by Apple through the App Store
-using StoreKit. We do not see or receive your name, payment card, or billing
-details. Apple handles all payment information under
+Smart Filter offers an optional one-time purchase ("Pro") that removes the export
+watermark. It is sold and processed by Apple through the App Store using StoreKit.
+We do not see or receive your name, payment card, or billing details. Apple
+handles all payment information under
 [Apple's Privacy Policy](https://www.apple.com/legal/privacy/). The app only
-receives an anonymous, signed confirmation from Apple that a purchase is active,
-which it uses to unlock features on your device.
+receives an anonymous, signed confirmation from Apple that the purchase is
+active, which it uses to unlock the feature on your device.
 
 ## Analytics, Tracking, and Third Parties
 
@@ -72,8 +77,8 @@ contact us using the details below.
 
 ## Data Retention
 
-We retain no data because we collect none. Edits and saved images live only on
-your device, managed by you.
+We retain no data because we collect none. Edits, face detection results, and
+saved images live only on your device, managed by you.
 
 ## Changes to This Policy
 
@@ -85,4 +90,4 @@ you accept the revised policy.
 
 If you have any questions about this Privacy Policy, contact:
 
-**Email:** your-contact-email@example.com
+**Email:** pobedrik@gmail.com
